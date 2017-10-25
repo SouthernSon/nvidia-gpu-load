@@ -25,4 +25,4 @@ while read LINE; do
 	echo -e "\tMemory bandwidth usage:\t$memoryusage%"
 	echo -e "\tPCIe bandwidth usage:\t$bandwidthusage%"
 
-done < <(echo $gpulist)
+done <<< "$gpulist"
